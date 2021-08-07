@@ -45,7 +45,7 @@ while codeptr < len(code):
   array[arrayptr] = ord(B[-1])
   B=B[0: -2]
  if code[codeptr] == ".":
-  print(chr(a%128))
+  print(chr(array[arrayptr]%128))
  if code[codeptr] == ">":
   arrayptr -= 1
  if code[codeptr] == "<":
