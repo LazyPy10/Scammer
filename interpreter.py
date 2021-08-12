@@ -39,9 +39,9 @@ while codeptr < len(code):
   if array[arrayptr] == -1:
    array[arrayptr] = 255
  if code[codeptr] == "$":
-  A=input("FREE MINECRAFT NFA JUST ENTER INFORMATION")
+  A=input("FREE MINECRAFT NFA JUST ENTER INFORMATION: ")
  if code[codeptr] == "#":
-  B=input("FREE BOBUX JUST ENTER INFRMATION, 101% REAL")
+  B=input("FREE BOBUX JUST ENTER INFRMATION, 101% REAL: ")
  if code[codeptr] == "*":
   array[arrayptr] = ord(A[-1])
   A=A[0: -2]
