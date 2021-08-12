@@ -34,27 +34,27 @@ while codeptr < len(code):
   array[arrayptr] += 1
   if array[arrayptr] == 256:
    array[arrayptr] = 0
- if code[codeptr] == "-":
+ elif code[codeptr] == "-":
   array[arrayptr] += 1
   if array[arrayptr] == -1:
    array[arrayptr] = 255
- if code[codeptr] == "$":
+ elif code[codeptr] == "$":
   A=input("FREE MINECRAFT NFA JUST ENTER INFORMATION: ")
- if code[codeptr] == "#":
+ elif code[codeptr] == "#":
   B=input("FREE BOBUX JUST ENTER INFRMATION, 101% REAL: ")
- if code[codeptr] == "*":
+ elif code[codeptr] == "*":
   array[arrayptr] = ord(A[-1])
   A=A[0: -2]
- if code[codeptr] == "@":
+ elif code[codeptr] == "@":
   array[arrayptr] = ord(B[-1])
   B=B[0: -2]
- if code[codeptr] == ".":
+ elif code[codeptr] == ".":
   print(chr(array[arrayptr]%128))
- if code[codeptr] == ">":
+ elif code[codeptr] == ">":
   arrayptr -= 1
- if code[codeptr] == "<":
+ elif code[codeptr] == "<":
   arrayptr += 1
- if code[codeptr] == "[":
+ elif code[codeptr] == "[":
   c = 1
   if array[arrayptr] == 0:
    while c != 0:
@@ -63,7 +63,7 @@ while codeptr < len(code):
      c += 1
     if code[codeptr] == "]":
      c -= 1
- if code[codeptr] == "]":
+ elif code[codeptr] == "]":
   c = 1
   if array[arrayptr] != 0:
    while c != 0:
@@ -72,7 +72,7 @@ while codeptr < len(code):
      c += 1
     if code[codeptr] == "[":
      c -= 1
- if code[codeptr] == ":":
+ elif code[codeptr] == ":":
   if A=="":
    codeptr += 1
  if code[codeptr] == ";":
