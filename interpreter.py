@@ -1,6 +1,6 @@
 # Bhai, 101% working no scam
 code = n = input()
-while n != "PLS BHAI STOP U ARE CRINGE YOUR TUTORIAL IS NOT WORKING":
+while not n in ["PLS BHAI STOP U ARE CRINGE YOUR TUTORIAL IS NOT WORKING", "BHAI U JUST POSTED CRINGE, U WILL LOST SUBSCRIBERS", "BHAI, WHAT IS THIS? MY PHONE HAS LIGMA AAAAGGGHHHHHH" ]:
  code += n
  n = input()
 for i in ["+", "-", "$", "#", "*", "@", "." , ">", "<", "[", "]", ":", ";"]:
