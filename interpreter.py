@@ -32,8 +32,12 @@ B=""
 while codeptr < len(code):
  if code[codeptr] == "+":
   array[arrayptr] += 1
+  if array[arrayptr] == 256:
+   array[arrayptr] = 0
  if code[codeptr] == "-":
   array[arrayptr] += 1
+  if array[arrayptr] == -1:
+   array[arrayptr] = 255
  if code[codeptr] == "$":
   A=input("FREE MINECRAFT NFA JUST ENTER INFORMATION")
  if code[codeptr] == "#":
