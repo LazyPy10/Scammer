@@ -43,11 +43,23 @@ while codeptr < len(code):
  elif code[codeptr] == "#":
   B=input("FREE BOBUX JUST ENTER INFRMATION, 101% REAL: ")
  elif code[codeptr] == "*":
-  array[arrayptr] = ord(A[-1])
-  A=A[0: -2]
+  if len(A) > 1:
+   array[arrayptr] = ord(A[-1])
+   A=A[0: -2]
+  elif len(A) == 1:
+   array[arrayptr] = ord(A)
+   A = ""
+  else:
+   array[arrayptr] = 0
  elif code[codeptr] == "@":
-  array[arrayptr] = ord(B[-1])
-  B=B[0: -2]
+  if len(A) > 1:
+   array[arrayptr] = ord(B[-1])
+   B=B[0: -2]
+  elif len(B) == 1:
+   array[arrayptr] = ord(B)
+   B = ""
+  else:
+   array[arrayptr] = 0
  elif code[codeptr] == ".":
   print(chr(array[arrayptr]%128))
  elif code[codeptr] == ">":
