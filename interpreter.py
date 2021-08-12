@@ -78,5 +78,5 @@ while codeptr < len(code):
  if code[codeptr] == ";":
   if B=="":
    codeptr += 1
-
+ codeptr += 1
   
